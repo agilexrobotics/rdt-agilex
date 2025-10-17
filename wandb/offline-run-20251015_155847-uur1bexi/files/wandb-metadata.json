@@ -1,0 +1,190 @@
+{
+    "os": "Linux-6.8.0-40-generic-x86_64-with-glibc2.35",
+    "python": "3.10.0",
+    "heartbeatAt": "2025-10-15T07:58:48.054398",
+    "startedAt": "2025-10-15T07:58:47.986923",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--deepspeed=./configs/zero2.json",
+        "--pretrained_model_name_or_path=/home/agilex/models/robotics-diffusion-transformer/rdt-1b",
+        "--pretrained_text_encoder_name_or_path=/home/agilex/models/google/t5-v1_1-xxl",
+        "--pretrained_vision_encoder_name_or_path=/home/agilex/models/google/siglip-so400m-patch14-384",
+        "--output_dir=/home/agilex/checkpoints/rdt-finetune-1b",
+        "--train_batch_size=4",
+        "--sample_batch_size=8",
+        "--max_train_steps=200000",
+        "--checkpointing_period=1000",
+        "--sample_period=500",
+        "--checkpoints_total_limit=40",
+        "--lr_scheduler=constant",
+        "--learning_rate=1e-4",
+        "--mixed_precision=bf16",
+        "--dataloader_num_workers=1",
+        "--image_aug",
+        "--dataset_type=finetune",
+        "--state_noise_snr=40",
+        "--load_from_hdf5",
+        "--report_to=wandb",
+        "--precomp_lang_embed"
+    ],
+    "state": "running",
+    "program": "/home/agilex/RoboticsDiffusionTransformer/main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://gitee.com/LunKai/RoboticsDiffusionTransformer.git",
+        "commit": "65063c9859a1e2d92a82909600b6c6aa0edc9610"
+    },
+    "email": "lunkailin@163.com",
+    "root": "/home/agilex/RoboticsDiffusionTransformer",
+    "host": "agilex",
+    "username": "agilex",
+    "executable": "/home/agilex/miniforge3/envs/rdt/bin/python3.10",
+    "cpu_count": 16,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 2676.8555416666663,
+        "min": 800.0,
+        "max": 4416.666666666667
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4200.042,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4197.165,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2385.207,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 3685.579,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4200.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4200.0,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 2350.543,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 2312.707,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 1841.394,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 3540.909,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3498.497,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3501.584,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3499.461,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3500.473,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3499.948,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3537.5,
+            "min": 800.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3501.19,
+            "min": 800.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1714.4246253967285,
+            "used": 486.70669174194336
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 31.12105941772461
+    }
+}
