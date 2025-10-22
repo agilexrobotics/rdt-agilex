@@ -8,7 +8,7 @@ ubuntu22.04 + cuda12.8
 
     ```bash
     # Clone this repo
-    git clone https://github.com/AgilexRobotics/RoboticsDiffusionTransformer.git
+    git clone https://github.com/agilexrobotics/rdt-agilex.git RoboticsDiffusionTransformer
     git clone https://github.com/NVIDIA/cutlass.git
     cd RoboticsDiffusionTransformer
     
